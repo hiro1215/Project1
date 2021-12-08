@@ -82,7 +82,11 @@ position: absolute;
 }
 
 }
-
+@media screen and (max-width: 767px) {
+.HeaderLogo__image{
+    height: 16px;
+}
+}
 .HeaderNavList{
     display: flex;
     list-style-type:none;
@@ -206,12 +210,27 @@ position: absolute;
 }
 
 @media screen and (min-width: 767px){
+
 .FirstViewContent__btns{
     display: flex;
     text-align: center;
 }
 }
 @media screen and (max-width: 767px){
+.FirstView{
+    padding: 53px 35px 0 0;
+}
+.FirstView__main-image{
+    display: block;
+}
+.FirstView__container{
+margin-top: -45vw;
+}
+.FirstViewContent__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-top: 0;
+}
 .FirstViewContent__btns{
     text-align: center;
 }
@@ -329,6 +348,17 @@ position: absolute;
 }
 .About__title {
     width: 100%;
+}
+.AboutWrapper{
+    padding: 30px 0;
+}
+.About__title h2{
+    margin: 0;
+    text-align: center;
+}
+
+.About__title h2>span {
+    font-size: 33px;
 }
 .About__btn {
     width: 250px;
